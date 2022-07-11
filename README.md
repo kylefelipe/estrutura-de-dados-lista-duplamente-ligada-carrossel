@@ -55,9 +55,9 @@ O Carousel tem um metodo para retornar o item atual e outro para retornar posiç
 
 ```Python
 
-rint(f'item atual: {carrossel_original.atual()}')
+print(f'item atual: {carrossel_original.atual()}')
 #>> None
-rint(f'Posição atual: {carrossel_original.posicao()}')
+print(f'Posição atual: {carrossel_original.posicao()}')
 #>> None
 
 carrossel_original.next()
