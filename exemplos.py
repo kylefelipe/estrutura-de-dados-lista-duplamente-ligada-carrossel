@@ -21,7 +21,7 @@ print(carrossel_original)
 print(f'item atual: {carrossel_original.atual}')
 # >> None
 
-print(f'Posição atual: {carrossel_original.posicao()}')
+print(f'Posição atual: {carrossel_original.posicao}')
 # >> None
 
 carrossel_original.next()
@@ -29,7 +29,7 @@ carrossel_original.next()
 print(f'item atual: {carrossel_original.atual}')
 # >> Profa. Helena Fernandez
 
-print(f'item atual: {carrossel_original.posicao()}')
+print(f'item atual: {carrossel_original.posicao}')
 # >> 0
 
 # Carousel.next()
@@ -41,13 +41,13 @@ print(f"Tamanho do carrossel: {len(carrossel)}")
 # 6
 
 print(
-    f"Posição atual: {carrossel.posicao()} - Item Atual: {carrossel.atual}")
+    f"Posição atual: {carrossel.posicao} - Item Atual: {carrossel.atual}")
 # Posição atual: None - Item Atual: None
 
 proximo = carrossel.next()
 print(f"Próximo item: {proximo}")
 print(
-    f"Posição atual: {carrossel.posicao()} - Item Atual: {carrossel.atual}")
+    f"Posição atual: {carrossel.posicao} - Item Atual: {carrossel.atual}")
 # Posição atual: 0 - Item Atual: Profa. Helena Fernandez
 
 print(f"Tamanho do carrossel: {len(carrossel)}")
@@ -59,7 +59,7 @@ print(f"Tamanho do carrossel: {len(carrossel)}")
 # 6
 
 print(
-    f"Posição atual: {carrossel.posicao()} - Item Atual: {carrossel.atual}")
+    f"Posição atual: {carrossel.posicao} - Item Atual: {carrossel.atual}")
 # Posição atual: None - Item Atual: None
 
 # Built-in next()
@@ -69,13 +69,13 @@ print(f"Tamanho do carrossel: {len(carrossel)}")
 # 6
 
 print(
-    f"Posição atual: {carrossel.posicao()} - Item Atual: {carrossel.atual}")
+    f"Posição atual: {carrossel.posicao} - Item Atual: {carrossel.atual}")
 # Posição atual: None - Item Atual: None
 
 proximo = next(carrossel)
 print(f"Próximo item: {proximo}")
 print(
-    f"Posição atual: {carrossel.posicao()} - Item Atual: {carrossel.atual}")
+    f"Posição atual: {carrossel.posicao} - Item Atual: {carrossel.atual}")
 # Posição atual: 0 - Item Atual: Profa. Helena Fernandez
 
 print(f"Tamanho do carrossel: {len(carrossel)}")
@@ -89,14 +89,14 @@ print(f"Tamanho do carrossel: {len(carrossel)}")
 # 6
 
 print(
-    f"Posição atual: {carrossel.posicao()} - Item Atual: {carrossel.atual}")
+    f"Posição atual: {carrossel.posicao} - Item Atual: {carrossel.atual}")
 # Posição atual: None - Item Atual: None
 
 anterior = carrossel.prev()
 print(f"Item anterior: {anterior}")
 # > Item anterior: Jaime Palillo
 print(
-    f"Posição atual: {carrossel.posicao()} - Item Atual: {carrossel.atual}")
+    f"Posição atual: {carrossel.posicao} - Item Atual: {carrossel.atual}")
 # Posição atual: 3 - Item Atual: Jaime Palillo
 
 print(f"Tamanho do carrossel: {len(carrossel)}")
@@ -134,7 +134,7 @@ for i in range(len(carrossel) + 3):
 carrossel = Carousel(['Profa. Helena Fernandez', 'Maria Joaquina',
                      'Cirilo Rivera', 'Suzana Bustamante', 'Carmen Carrillo', 'Jaime Palillo'], 2)
 print(
-    f"Posição atual: {carrossel.posicao()} - Item Atual: {carrossel.atual}")
+    f"Posição atual: {carrossel.posicao} - Item Atual: {carrossel.atual}")
 # > Posição atual: 2 - Item Atual: Cirilo Rivera
 
 # Excessões

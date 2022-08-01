@@ -29,7 +29,7 @@ class Carousel:
     pop([i]) -> item: Remove um item do Carousel e o retorna, o i padrão é -1.
     atual -> item: Retorna o item atual do Carousel, o item retornado não é
                     removido
-    posicao() -> inteiro: Retorna a posição (indice) atual no Carousel.
+    posicao -> inteiro: Retorna a posição (indice) atual no Carousel.
     """
 
     def __init__(self, array=None, position=None):
@@ -111,6 +111,7 @@ class Carousel:
             return None
         return self._data[self._atual]
 
+    @property
     def posicao(self) -> int:
         if self.is_empty:
             raise Empty('Carousel está vazio!')
