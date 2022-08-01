@@ -27,7 +27,7 @@ class Carousel:
                     removido. 
     append(item): Adiciona um novo item no final do Carousel.
     pop([i]) -> item: Remove um item do Carousel e o retorna, o i padrão é -1.
-    atual() -> item: Retorna o item atual do Carousel, o item retornado não é
+    atual -> item: Retorna o item atual do Carousel, o item retornado não é
                     removido
     posicao() -> inteiro: Retorna a posição (indice) atual no Carousel.
     """
@@ -102,6 +102,7 @@ class Carousel:
         """
         return self.__next__()
 
+    @property
     def atual(self):
         """Retorna o item atual do Carousel, sem removê-lo"""
         if self.is_empty:
