@@ -6,7 +6,7 @@ import pytest
 
 def test_validar_Carousel_esta_vazio():
     carroussel = Carousel([])
-    assert carroussel.is_empty() == True
+    assert carroussel.is_empty == True
 
 
 def test_valida_ir_para_proximo_em_Carousel_vazia():
@@ -40,7 +40,7 @@ def test_remove_ultimo_item_do_Carousel():
 
 def test_item_atual_deve_ser_None():
     carrossel = Carousel(list(range(5)))
-    assert carrossel.atual() is None
+    assert carrossel.atual is None
 
 
 def test_deve_retorna_item_atual_sem_remover():
@@ -66,7 +66,7 @@ def test_deve_avancar_em_loop():
     while count <= 5:
         carrossel.next()
         count += 1
-    assert carrossel.atual() == 0
+    assert carrossel.atual == 0
 
 
 def test_deve_retroceder_em_loop():
@@ -75,4 +75,4 @@ def test_deve_retroceder_em_loop():
     while count <= 5:
         carrossel.prev()
         count += 1
-    assert carrossel.atual() == 4
+    assert carrossel.atual == 4
