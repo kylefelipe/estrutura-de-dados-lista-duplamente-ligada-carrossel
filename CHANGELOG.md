@@ -4,6 +4,15 @@ Todas as alterações importantes deste projeto serão documentadas aqui.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
+## [0.0.3] - 2022-08-05
+
+### Changed
+
+### Added
+
+* test_inicia_Carousel_em_uma_posicao
+* test_remove_item_do_Carousel_pelo_indice
+
 ## [0.0.2] - 2022-08-01
 
 ### Changed
