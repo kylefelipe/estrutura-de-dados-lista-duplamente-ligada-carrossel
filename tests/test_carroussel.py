@@ -89,3 +89,4 @@ def test_inicia_Carousel_em_uma_posicao():
     carrossel = Carousel(list(range(5)), 2)
     assert len(carrossel) == 5
     assert carrossel.atual == 2
+    assert carrossel.posicao == 2
