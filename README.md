@@ -201,7 +201,7 @@ print(
 Em alguns métodos, quando o Carousel estiver vazio, uma excessão `Empty` será disparada, são eles:
 
 * `.atual`
-* `.next() | next(<Carousel>`
+* `.next() | next(<Carousel>)`
 * `.posicao`
 * `.pop()`
 * `.prev()`
