@@ -37,6 +37,7 @@ def test_remove_ultimo_item_do_Carousel():
     assert len(carrossel) == 4
     assert removido == 4
 
+
 def test_remove_item_do_Carousel_pelo_indice():
     carrossel = Carousel(list(range(5)))
     removido = carrossel.pop(1)
@@ -82,3 +83,9 @@ def test_deve_retroceder_em_loop():
         carrossel.prev()
         count += 1
     assert carrossel.atual == 4
+
+
+def test_inicia_Carousel_em_uma_posicao():
+    carrossel = Carousel(list(range(5)), 2)
+    assert len(carrossel) == 5
+    assert carrossel.atual == 2
