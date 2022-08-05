@@ -37,6 +37,12 @@ def test_remove_ultimo_item_do_Carousel():
     assert len(carrossel) == 4
     assert removido == 4
 
+def test_remove_item_do_Carousel_pelo_indice():
+    carrossel = Carousel(list(range(5)))
+    removido = carrossel.pop(1)
+    assert len(carrossel) == 4
+    assert removido == 1
+
 
 def test_item_atual_deve_ser_None():
     carrossel = Carousel(list(range(5)))
